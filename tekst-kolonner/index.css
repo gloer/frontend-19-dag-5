@@ -5,6 +5,10 @@
     /* Vanligvis er dette 16px */
 }
 
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 h1 {
     font-size: 3.2rem;
 }
@@ -14,7 +18,42 @@ section {
     margin: auto;
 }
 
+.kolonner {
+    column-count: 3;
+    column-gap: 4rem;
+    column-rule: 1px solid black;
+    text-align: justify;
+}
+
+.kolonner img {
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+}
+
 p {
+    margin-top: 0;
+    margin-bottom: 3.2rem;
     font-size: 1.6rem; /* 16px */
+    line-height: 1.5; /* En og en halv linje-avstand */
     /* 2 x 20px = 40px */
+}
+
+p::first-letter {
+    font-size: 4.8rem;
+    line-height: 1;
+    float: left;
+    padding-right: 1.4rem;
+}
+
+@media (max-width: 94rem) {
+    .kolonner {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 53rem) {
+    .kolonner {
+        column-count: 1;
+    }
 }
