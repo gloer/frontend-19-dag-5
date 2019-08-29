@@ -1,0 +1,20 @@
+:root {
+    font-size: 62.5%;
+    /* 16 / 10 */
+    /* Nå er font-size 10px */
+    /* Vanligvis er dette 16px */
+}
+
+h1 {
+    font-size: 3.2rem;
+}
+
+section {
+    max-width: 120rem; /* 120x10 = 1200 */
+    margin: auto;
+}
+
+p {
+    font-size: 1.6rem; /* 16px */
+    /* 2 x 20px = 40px */
+}
